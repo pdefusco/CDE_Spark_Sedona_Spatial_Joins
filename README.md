@@ -2,7 +2,6 @@
 
 
 
-
 ## CDE Setups
 
 Create CDE Files Resource and upload scripts and data
@@ -33,6 +32,22 @@ cde resource upload --name sedona \
 ## CDE Spark Connect Docker Container Setups
 
 The demo is containerized.
+
+#### Optional: Create the Docker Image
+
+If you don't want to create the image and are ok just pulling one from DockerHub you can skip ahead to the next step.
+
+Image build:
+
+```
+docker build -t pauldefusco/cde_spark_sedona_spatial_joins:latest
+```
+
+Image push:
+
+```
+docker push pauldefusco/cde_spark_sedona_spatial_joins:latest
+```
 
 #### Pull the Docker Container and Launch the IDE
 
