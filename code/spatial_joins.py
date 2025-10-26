@@ -44,21 +44,19 @@ import pyspark.sql.functions as F
 from sedona.spark import *
 from pyspark.sql import SparkSession
 
-"""# Create a Spark session with Sedona configuration
+'''
+# Create a Spark session with Sedona configuration
 config = SedonaContext.builder().\
     config('spark.jars.packages',
-           'org.apache.sedona:sedona-spark-shaded-3.5_2.12:1.8.0,'
-           'org.datasyslab:geotools-wrapper:1.8.0-28.5').\
+           'org.apache.sedona:sedona-spark-shaded-3.5_2.12:1.7.0,'
+           'org.datasyslab:geotools-wrapper:1.7.0-28.5').\
     getOrCreate()
-"""
+'''
 
 config = SedonaContext.builder() \
     .config('spark.jars.packages',
-            'org.apache.sedona:sedona-spark-shaded-3.5_2.12:1.8.0,'
-            'org.datasyslab:geotools-wrapper:1.8.0-28.5') \
-    .config('spark.serializer', 'org.apache.spark.serializer.KryoSerializer') \
-    .config('spark.kryo.registrator', 'org.apache.sedona.core.serde.SedonaKryoRegistrator') \
-    .config('spark.kryoserializer.buffer.max', '128m') \
+        'org.apache.sedona:sedona-spark-shaded-3.5_2.12:1.8.0,'
+        'org.datasyslab:geotools-wrapper:1.8.0-33.1')\
     .getOrCreate()
 
 sedona = SedonaContext.create(config)

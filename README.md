@@ -11,7 +11,9 @@ cde resource create --type files \
   --name artifacts
 
 cde resource upload --name artifacts \
-  --local-path code/spatial_joins.py \
+  --local-path code/spatial_joins.py
+
+cde resource upload --name artifacts \
   --local-path data/las_vegas_accidents.csv \
   --local-path data/las_vegas_customer_pii.csv \
   --local-path data/las_vegas_neighborhoods.csv \
