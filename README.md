@@ -23,9 +23,9 @@ Create CDE Python Resource
 
 ```
 cde resource create --type python-env \
-  --name sedona
+  --name sedona-env
 
-cde resource upload --name sedona \
+cde resource upload --name sedona-env \
   --local-path resources/requirements.txt
 ```
 
