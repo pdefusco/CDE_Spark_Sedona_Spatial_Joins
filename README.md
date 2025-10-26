@@ -51,11 +51,11 @@ docker run -p 8888:8888 pauldefusco/cde_spark_sedona_spatial_joins
 
 Launch the JupyterLab IDE in your browser by copy and pasting the provided url as shown below.
 
-![alt text](../../img/docker-container-launch.png)
+![alt text](/img/docker-container-launch.png)
 
 You now have access to all lab materials from the JupyterLab IDE in the left pane. From here, you can launch notebooks and run the terminal.
 
-![alt text](../../img/jl-home.png)
+![alt text](/img/jl-home.png)
 
 You will use the terminal in the IDE to run the CDE CLI commands for the labs. First you need to configure the CLI and install Spark Connect though.
 
@@ -63,23 +63,23 @@ You will use the terminal in the IDE to run the CDE CLI commands for the labs. F
 
 Open CDE's configurations and apply your Workload Username and Jobs API URL. You can find your Jobs API URL in your Virtual Cluster's Details Page.
 
-![alt text](../../img/jobs-api-url-1.png)
+![alt text](/img/jobs-api-url-1.png)
 
-![alt text](../../img/jobs-api-url-2.png)
+![alt text](/img/jobs-api-url-2.png)
 
-![alt text](../../img/cli-configs-1.png)
+![alt text](/img/cli-configs-1.png)
 
-![alt text](../../img/cli-configs-2.png)
+![alt text](/img/cli-configs-2.png)
 
 Next, generate a CDP access token and edit your CDP credentials.
 
-![alt text](../../img/usr-mgt-1.png)
+![alt text](/img/usr-mgt-1.png)
 
-![alt text](../../img/usr-mgt-2.png)
+![alt text](/img/usr-mgt-2.png)
 
-![alt text](../../img/usr-mgt-3.png)
+![alt text](/img/usr-mgt-3.png)
 
-![alt text](../../img/cdp-credentials.png)
+![alt text](/img/cdp-credentials.png)
 
 Finally, run the following commands to install the CDE Spark Connect tarballs.
 
@@ -88,7 +88,7 @@ pip3 install cdeconnect.tar.gz
 pip3 install pyspark-3.5.1.tar.gz
 ```
 
-![alt text](../../img/install-deps.png)
+![alt text](/img/install-deps.png)
 
 #### Launch a CDE Spark Connect Session
 
@@ -105,13 +105,13 @@ cde session create \
   --executor-memory "8g"
 ```
 
-![alt text](../../img/launchsess.png)
+![alt text](/img/launchsess.png)
 
 In the Sessions UI, validate the Session is Running.
 
-![alt text](../../img/cde_session_validate_1.png)
+![alt text](/img/cde_session_validate_1.png)
 
-![alt text](../../img/cde_session_validate_2.png)
+![alt text](/img/cde_session_validate_2.png)
 
 #### Run Your First PySpark & Iceberg Application via Spark Connect
 
@@ -129,4 +129,4 @@ storageLocation = <your-storage-location-here>
 username = <your-cdp-workload-username-here>
 ```
 
-![alt text](../../img/runnotebook-1.png)
+![alt text](/img/runnotebook-1.png)
