@@ -7,10 +7,10 @@
 Create CDE Files Resource and upload scripts and data
 
 ```
-cde resource create --type file \
-  --name data
+cde resource create --type files \
+  --name artifacts
 
-cde resource upload --name data \
+cde resource upload --name artifacts \
   --local-path code/spatial_joins.py \
   --local-path data/las_vegas_accidents.csv \
   --local-path data/las_vegas_customer_pii.csv \
@@ -22,11 +22,11 @@ cde resource upload --name data \
 Create CDE Python Resource
 
 ```
-cde resource create --type python \
+cde resource create --type python-env \
   --name sedona
 
 cde resource upload --name sedona \
-  --local-path sedona
+  --local-path resources/requirements.txt
 ```
 
 ## CDE Spark Connect Docker Container Setups
